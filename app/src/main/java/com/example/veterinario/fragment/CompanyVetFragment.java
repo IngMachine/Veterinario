@@ -22,7 +22,7 @@ import java.util.Map;
 public class CompanyVetFragment extends Fragment {
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference();
+    DatabaseReference myRef = database.getReference().child("DataVet");
     EditText editTextNameCompanyVet,editTextAddress,editTextBusinessHours,
             editTextEmail,editTextPhone,editTextCellPhone,editTextFacebook,
             editTextIntagram,editTextTwitter,editTextPageLane,editTextDescription;
