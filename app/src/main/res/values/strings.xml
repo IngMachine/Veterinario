@@ -2,18 +2,31 @@
     <string name="app_name">Registro de veterianarias de Adottare </string>
     <string name="tab_text_1">Empresa Veterinarias</string>
     <string name="tab_text_2">Veterinarios Independientes</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="inscribir">Inscribirse</string>
     <string name="edad">Edad</string>
     <string name="datos_mascota">Datos mascota</string>
     <string name="descrip">Ingresa una pequeña descripción</string>
     <string name="datos_responsable">Datos Responsable</string>
     <string name="nombre">Nombre</string>
-    <string name="direccion">Dirección</string>
     <string name="email">Correo electronico</string>
     <string name="ciudad_departamento">Ciudad/Departamento</string>
     <string name="subir_foto">Sube una foto de tu mascota</string>
     <string name="bienvenido">Hola, Bienvenido a Adottare</string>
     <string name="caption">Aquí podras encontrar una mascota para ti!</string>
     <string name="info_veterinaria">Información de Veterinarias.</string>
+    <string name="nameCompanyVet">Nombre completo de la empresa.</string>
+    <string name="DescriptionImageCompanyVet">Veterinary related image</string>
+    <string name="direccion">Dirección</string>
+    <string name="business_hours">Horario de Atención.</string>
+    <string name="description">Descripción</string>
+    <string name="lane_page">Página Web</string>
+    <string name="phone">Teléfono Fijo</string>
+    <string name="cell_phone">Numero Celular (Whatsapp)</string>
+    <string name="instagram">Instagram</string>
+    <string name="twitter">Twitter</string>
+    <string name="send">Send</string>
+    <string name="facebook">Facebook</string>
+    <string name="descriptionRelationVet">Image related to the veterinarian</string>
+    <string name="name">Nombre Completo</string>
+    <string name="perfil_pro">Perfil Profesional (Descripcion)</string>
 </resources>

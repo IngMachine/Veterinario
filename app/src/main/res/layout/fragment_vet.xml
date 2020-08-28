@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".fragment.VetFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +15,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="#33F6FF"
             android:layout_marginTop="20dp"
             android:padding="20dp">
 
@@ -25,7 +23,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerVertical="true"
-                android:contentDescription="Image related to the veterinarian"
+                android:contentDescription="@string/descriptionRelationVet"
                 android:src="@drawable/veterinaria_male" />
 
             <TextView
@@ -37,7 +35,7 @@
                 android:layout_toEndOf="@+id/profile_image"
                 android:fontFamily="@font/bungee_regular"
                 android:includeFontPadding="false"
-                android:text="Información de Veterinarios."
+                android:text="@string/info_veterinaria"
                 android:textSize="20sp" />
 
             <TextView
@@ -62,9 +60,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Nombre Completo"
-                app:counterEnabled="true"
-                app:counterMaxLength="20">
+                android:hint="@string/name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/name_vet"
@@ -79,7 +79,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Dirección">
+                android:hint="@string/direccion"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/address_vet"
@@ -94,7 +98,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Email">
+                android:hint="@string/email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -110,7 +118,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Perfil Profesional (Descripcion)">
+                android:hint="@string/perfil_pro"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/profileProVet"
@@ -125,7 +137,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Numero Celular (Whatsapp)">
+                android:hint="@string/cell_phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -141,7 +157,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Facebook">
+                android:hint="@string/facebook"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -157,7 +177,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Instagram">
+                android:hint="@string/instagram"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -173,7 +197,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Twitter">
+                android:hint="@string/twitter"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -189,9 +217,9 @@
                 android:id="@+id/sendVet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Send"
+                android:text="@string/send"
                 android:fontFamily="@font/bungee_regular"
-                android:background="#33F6FF"/>
+                android:background="@drawable/bordes_redondos"/>
 
 
         </LinearLayout>

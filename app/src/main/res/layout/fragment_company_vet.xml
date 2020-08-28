@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".fragment.CompanyVetFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +15,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="#33F6FF"
             android:layout_marginTop="20dp"
             android:padding="20dp">
 
@@ -25,7 +23,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerVertical="true"
-                android:contentDescription="Veterinary related image"
+                android:contentDescription="@string/DescriptionImageCompanyVet"
                 android:src="@drawable/veterinario_hospital" />
 
             <TextView
@@ -59,10 +57,14 @@
             android:padding="20dp">
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Nombre completo de la empresa.">
+                android:hint="@string/nameCompanyVet"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/nameCompanyVet"
@@ -77,7 +79,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Dirección">
+                android:hint="@string/direccion"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/address"
@@ -92,7 +98,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Horario de Atención.">
+                android:hint="@string/business_hours"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -108,7 +118,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Descripción">
+                android:hint="@string/description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -124,7 +138,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Página Web">
+                android:hint="@string/lane_page"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -140,7 +158,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Email">
+                android:hint="@string/email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -156,7 +178,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Teléfono Fijo">
+                android:hint="@string/phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -172,7 +198,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Numero Celular (Whatsapp)">
+                android:hint="@string/cell_phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -188,7 +218,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Facebook">
+                android:hint="@string/facebook"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -204,7 +238,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Instagram">
+                android:hint="@string/instagram"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -220,7 +258,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:hint="Twitter">
+                android:hint="@string/twitter"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text">
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -238,9 +280,9 @@
                 android:id="@+id/sendCompanyVet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Send"
+                android:text="@string/send"
                 android:fontFamily="@font/bungee_regular"
-                android:background="#33F6FF"/>
+                android:background="@drawable/bordes_redondos"/>
 
            </LinearLayout>
 
