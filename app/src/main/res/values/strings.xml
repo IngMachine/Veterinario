@@ -1,5 +1,19 @@
 <resources>
-    <string name="app_name">Veterinario</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="app_name">Registro de veterianarias de Adottare </string>
+    <string name="tab_text_1">Empresa Veterinarias</string>
+    <string name="tab_text_2">Veterinarios Independientes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="inscribir">Inscribirse</string>
+    <string name="edad">Edad</string>
+    <string name="datos_mascota">Datos mascota</string>
+    <string name="descrip">Ingresa una pequeña descripción</string>
+    <string name="datos_responsable">Datos Responsable</string>
+    <string name="nombre">Nombre</string>
+    <string name="direccion">Dirección</string>
+    <string name="email">Correo electronico</string>
+    <string name="ciudad_departamento">Ciudad/Departamento</string>
+    <string name="subir_foto">Sube una foto de tu mascota</string>
+    <string name="bienvenido">Hola, Bienvenido a Adottare</string>
+    <string name="caption">Aquí podras encontrar una mascota para ti!</string>
+    <string name="info_veterinaria">Información de Veterinarias.</string>
 </resources>
