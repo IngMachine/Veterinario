@@ -29,4 +29,8 @@
     <string name="descriptionRelationVet">Image related to the veterinarian</string>
     <string name="name">Nombre Completo</string>
     <string name="perfil_pro">Perfil Profesional (Descripcion)</string>
+    <string name="todo">TODO</string>
+    <string name="description_img">Aqui va la imagen del veterinario.</string>
+    <string name="name_image">nombre de foto</string>
+    <string name="inscribirse">Inscribirse</string>
 </resources>
