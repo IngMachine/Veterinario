@@ -166,12 +166,12 @@ public class VetFragment extends Fragment {
             }
         });
 
-        /*buttonSelect.setOnClickListener(new View.OnClickListener() {
+        buttonSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 uploadFile();
             }
-        });*/
+        });
 
         textViewShowUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -211,7 +211,6 @@ public class VetFragment extends Fragment {
         buttonSendVet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                uploadFile();
                 Map<String, Object> dataVet = new HashMap<>();
                 String nameVet = editTextName.getText().toString();
                 String address = editTextAddress.getText().toString();
