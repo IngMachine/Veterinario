@@ -92,7 +92,7 @@ public class CompanyVetFragment extends Fragment {
 
     private void uploadFile() {
         if (ImageUri != null){
-            final StorageReference fileReference = storageReference.child( editTextImgPhoto.getText().toString() +  "." + getFileExtension(ImageUri));
+            final StorageReference fileReference = storageReference.child( System.currentTimeMillis() +  "." + getFileExtension(ImageUri));
             fileReference.putFile(ImageUri).
                     addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
@@ -149,7 +149,7 @@ public class CompanyVetFragment extends Fragment {
         imageButtonUpCompany= view.findViewById(R.id.up_image_Company);
         imageViewPhotoCompanyVet= view.findViewById(R.id.iv_result_company_vet);
         progressBar = view.findViewById(R.id.progress_bar_company_vet);
-        editTextImgPhoto = view.findViewById(R.id.img_photo_company_vet);
+        //editTextImgPhoto = view.findViewById(R.id.img_photo_company_vet);
 
         storageReference = FirebaseStorage.getInstance().getReference("ImageCompanyVet");
 
@@ -167,7 +167,7 @@ public class CompanyVetFragment extends Fragment {
             }
         });
 
-        editTextImgPhoto.addTextChangedListener(new TextWatcher() {
+        /*editTextImgPhoto.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -182,7 +182,7 @@ public class CompanyVetFragment extends Fragment {
             public void afterTextChanged(Editable editable) {
 
             }
-        });
+        });*/
 
         editTextNameCompanyVet = view.findViewById(R.id.nameCompanyVet);
         editTextAddress = view.findViewById(R.id.address);
@@ -227,9 +227,7 @@ public class CompanyVetFragment extends Fragment {
                 myRef.child("InscriptionCompanyVet").push().setValue(dataCompanyVet);
             }
         });
-
         return view;
-
     }
 
 

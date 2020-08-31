@@ -93,7 +93,7 @@ public class VetFragment extends Fragment {
 
     private void uploadFile() {
         if (ImageUri != null){
-            final StorageReference fileReference = storageReference.child( editTextImgPhoto.getText().toString() +  "." + getFileExtension(ImageUri));
+            final StorageReference fileReference = storageReference.child( System.currentTimeMillis() +  "." + getFileExtension(ImageUri));
             fileReference.putFile(ImageUri).
                     addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
@@ -151,7 +151,7 @@ public class VetFragment extends Fragment {
         buttonUp = view.findViewById(R.id.up_image);
         imageViewPhotoVet = view.findViewById(R.id.iv_result);
         progressBar = view.findViewById(R.id.progress_bar);
-        editTextImgPhoto = view.findViewById(R.id.img_photo_vet);
+        //editTextImgPhoto = view.findViewById(R.id.img_photo_vet);
 
         storageReference = FirebaseStorage.getInstance().getReference("ImageVet");
 
@@ -170,7 +170,7 @@ public class VetFragment extends Fragment {
         });
 
 
-        editTextImgPhoto.addTextChangedListener(new TextWatcher() {
+        /*editTextImgPhoto.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -185,7 +185,7 @@ public class VetFragment extends Fragment {
             public void afterTextChanged(Editable editable) {
 
             }
-        });
+        });*/
 
 
         editTextName = view.findViewById(R.id.name_vet);
