@@ -79,7 +79,7 @@ public class CompanyVetFragment extends Fragment {
 
     private void openFileChooser() {
         Intent intent = new Intent();
-        intent.setType("imageCompanyVet/*");
+        intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent, PICK_IMAGE_REQUEST);
     }
