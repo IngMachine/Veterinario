@@ -45,26 +45,28 @@ import java.util.Objects;
 import static android.app.Activity.RESULT_OK;
 
 public class VetFragment extends Fragment {
+
     private static final int PICK_IMAGE_REQUEST = 1;
+
     Button buttonSendVet;
+
     ImageButton buttonUp;
     ImageButton buttonSelect;
-    TextView textViewShowUp;
-    ImageView imageViewPhotoVet;
 
+    ImageView imageViewPhotoVet;
 
     Uri ImageUri;
 
-
     FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference().child("DataVet");
+
     StorageReference storageReference;
 
-    DatabaseReference myRef = database.getReference().child("DataVet");
     EditText editTextName, editTextAddress, editTextEmail, editTextProfilePro,
             editTextCellPhone, editTextFacebook, editTextInstagram, editTextTwitter,
             editTextImgPhoto;
-    ProgressBar progressBar;
 
+    ProgressBar progressBar;
     String imageUrl1;
 
     public VetFragment() {
@@ -89,8 +91,6 @@ public class VetFragment extends Fragment {
         return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
     }
 
-
-
     private void uploadFile() {
         if (ImageUri != null){
             final StorageReference fileReference = storageReference.child( editTextImgPhoto.getText().toString() +  "." + getFileExtension(ImageUri));
@@ -112,7 +112,6 @@ public class VetFragment extends Fragment {
                                     imageUrl1 = uri.toString();
                                 }
                             });
-
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
@@ -141,7 +140,6 @@ public class VetFragment extends Fragment {
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
             ImageUri = data.getData();
             Picasso.with(getActivity()).load(ImageUri).into(imageViewPhotoVet);
-
         }
     }
 
@@ -151,18 +149,16 @@ public class VetFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_vet, container, false);
         buttonSelect = view.findViewById(R.id.select);
         buttonUp = view.findViewById(R.id.up_image);
-        textViewShowUp = view.findViewById(R.id.text_view_show_uploads);
         imageViewPhotoVet = view.findViewById(R.id.iv_result);
         progressBar = view.findViewById(R.id.progress_bar);
         editTextImgPhoto = view.findViewById(R.id.img_photo_vet);
 
-        storageReference = FirebaseStorage.getInstance().getReference("uploads");
+        storageReference = FirebaseStorage.getInstance().getReference("ImageVet");
 
         buttonUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openFileChooser();
-
             }
         });
 
@@ -173,12 +169,6 @@ public class VetFragment extends Fragment {
             }
         });
 
-        textViewShowUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
 
         editTextImgPhoto.addTextChangedListener(new TextWatcher() {
             @Override

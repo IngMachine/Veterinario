@@ -134,6 +134,72 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/up_image_Company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/select" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_image"
+                    android:textColorHint="#000"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:helperTextTextColor="#000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/img_photo_company_vet"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageButton
+                    android:id="@+id/select_company_vet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/inscribirse"
+                    app:srcCompat="@drawable/up" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_result_company_vet"
+                android:layout_width="410dp"
+                android:layout_height="410dp" />
+            <ProgressBar
+                android:id="@+id/progress_bar_company_vet"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Uploads"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"/>
+
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
